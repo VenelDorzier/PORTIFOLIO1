@@ -249,51 +249,53 @@
     </p>
     </section>
     
-    <section id="Contato.html">  
+    <section id="Contato.html"> 
         <h3> Contato</h3>
     <footer>
-        <form>
+        <div class="container"> 
+            <div><small id="erro"></small></div>
+        <form action="#" method="Post" name="form" onsubmit="return validar()"> 
             <div>
-                <label>Nome</label>
-            <input type="text" placeholder="Digite seu nome" name="nome">
+                <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" name="nome">
+            </div>
+    
+            <div>
+            <label for="Email">Email</label>
+            <input type="text" id="email" placeholder="Digite seu email" name="email">
             </div>
 
             <div>
-            <label>Email</label>
-            <input type="text" placeholder="Digite seu email" name="email">
+            <label for="Telefone">Telefone</label>
+            <input type="text" id="telefone" placeholder="Digite seu telefone" name="telefone">
             </div>
 
-            <div>
-            <label>Telefone</label>
-            <input type="text" placeholder="Digite seu telefone" name="telefone">
-            </div>
-
-            <div>
-                <label>Menssagem</label>
-                <textarea  rows="5" placeholder="Digite sua menssagem" name="menssagem"></textarea>
-                <button type="submit">Enviar</button>
+                <div>
+                <label for="Menssagem">Menssagem</label>
+                <textarea  id="menssagem" rows="5" placeholder="Digite sua menssagem" name="menssagem"></textarea>
                 </div>
+     
+                <button type="submit">Enviar</button> 
+
+                <p>Quer entrar em contato comigo?
+                    Preencha o formulario ao lado e entrarei
+                    em contato o mais rapido possivel.
+                    Voce também pode me encontrar nas seguintes redes sociais:
+                </p>
+                    <a href="https://github.com/VenelDorzier" target="_blank" rel="noopener noreferrer">
+                        <img src="img/github.png"></img>
+                        <p>Github</p>
+                        </a>
+                        
+                        <a href="https://www.facebook.com/mimose.coeur target=" target="_blank" rel="noopener noreferrer">
+                        <img src="img/facebook.png"></img>
+                        <p>Facebook</p>
+                        </a>      
             </form> 
             
-            <script src="script.js"></script>
-                <p>Quer entrar em contato comigo?
-                
-                    Preencha o formulario ao lado e entrarei
-                
-                    em contato o mais rapido possivel.
-                
-                    Voce também pode me encontrar nas seguintes redes sociais:
-                </p> 
-                <a href="https://github.com/VenelDorzier" target="_blank" rel="noopener noreferrer">
-<img src="img/github.png"></img>
-<p>Github</p>
-                </a>
 
-<a href="https://www.facebook.com/mimose.coeur target=" target="_blank" rel="noopener noreferrer">
-<img src="img/facebook.png"></img>
-<p>Facebook</p>
-</a>
-        </section>   
+            <script src="script.js"></script>      
+</section>       
 </main>
 </nav>
 </footer>

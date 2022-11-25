@@ -3,7 +3,7 @@ function validar(){
     let nome = document.forms['form']['nome'].value;
     let email = document.forms['form']['email'].value;
     let telefone = document.forms['form']['telefone'].value;
-    
+    let menssagem = document.forms['form']['menssagem'].value;
 
     if(nome === "" ){
         alert('Preenche o campo nome.');

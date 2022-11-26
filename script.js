@@ -5,13 +5,13 @@ function validar(){
     let telefone = document.forms['form']['telefone'].value;
     let menssagem = document.forms['form']['menssagem'].value;
 
-    if(nome === "" ){
-        alert('Preenche o campo nome.');
-        document.getElementById('erro').innerHTML = "<P style= 'color: #f00;'>Erro: Preenche o campo nome!</P>";
-        return false;
-    }
+        if(nome === ""){
+            alert('Preenche o campo nome');
+            document.getElementById('erro').innerHTML ="<p style='color: #f00;'>Erro: Preenche o campo nome!</p>"; 
+         return false;
 
-    if(email === ""){
+        }
+        if(email === ""){
         alert('Preenche o campo email.');
         document.getElementById('erro').innerHTML ="<p style='color: #f00;'>Erro: Preenche o campo email!</p>"; 
         return false;
